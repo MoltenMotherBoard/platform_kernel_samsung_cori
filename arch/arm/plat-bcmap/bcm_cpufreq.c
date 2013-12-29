@@ -466,6 +466,7 @@ static int bcm_cpufreq_init(struct cpufreq_policy *policy)
 			__func__);
 		goto err_cpuinfo;
 	}
+	cpufreq_frequency_table_get_attr(b->bcm_freqs_table, policy->cpu);
 	b->policy = policy;
 
 	return 0;
@@ -486,6 +487,7 @@ static int bcm_cpufreq_exit(struct cpufreq_policy *policy)
 {
 	struct bcm_cpufreq *b = &bcm_cpufreq[policy->cpu];
 	pr_info("%s\n", __func__);
+	cpufreq_frequency_table_put_attr(policy->cpu);
 
 	kfree(b->bcm_freqs_table);
 	regulator_put(b->cpu_regulator);
