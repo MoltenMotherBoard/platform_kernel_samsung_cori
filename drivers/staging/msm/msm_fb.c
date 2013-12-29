@@ -52,7 +52,9 @@
 #define INIT_IMAGE_FILE "/logo.rle"
 extern int load_565rle_image(char *filename);
 #endif
-
+#ifdef CONFIG_FB_MSM_SEC_BOOTLOGO
+extern int load_565rle_image_onfb( char *filename, int start_x, int start_y);
+#endif
 
 #define pgprot_noncached(prot) \
        __pgprot_modify(prot, L_PTE_MT_MASK, L_PTE_MT_UNCACHED)
@@ -974,8 +976,10 @@ static int msm_fb_register(struct msm_fb_data_type *mfd)
 	    ("FrameBuffer[%d] %dx%d size=%d bytes is registered successfully!\n",
 	     mfd->index, fbi->var.xres, fbi->var.yres, fbi->fix.smem_len);
 
-#ifdef CONFIG_FB_MSM_LOGO
-	if (!load_565rle_image(INIT_IMAGE_FILE)) ;	/* Flip buffer */
+#ifdef CONFIG_FB_MSM_SEC_BOOTLOGO
+#if defined(CONFIG_MACH_CORI)
+ if (!load_565rle_image_onfb( "CORI.rle",0,0)) ;  /* Flip buffer */
+#endif
 #endif
 	ret = 0;
 
