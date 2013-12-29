@@ -367,11 +367,11 @@ static int bcm_cpufreq_set_speed(struct cpufreq_policy *policy,
 	/* Get the turbo mode frequency. Switching to and from turbo mode
 	 * needs special handling.
 	 */
-	index_turbo = info->index_turbo;
+	index_turbo = info->index_turbo -1;
 	freq_turbo = info->freq_tbl[index_turbo].cpu_freq * 1000;
 
 	/* Set APPS PLL enable bit when entering to turbo mode */
-	if (freqs.new == freq_turbo)
+	if (freqs.new >= freq_turbo)
 		clk_enable(b->appspll_en_clk);
 
 	/* freq.new will be in kHz. convert it to Hz for clk_set_rate */
@@ -380,7 +380,7 @@ static int bcm_cpufreq_set_speed(struct cpufreq_policy *policy,
 		ret = clk_set_rate(b->cpu_clk, freqs.new * 1000);
 
 	/* Clear APPS PLL enable bit when entering to normal mode */
-	if (freqs.new != freq_turbo)
+	if (freqs.new < freq_turbo)
 		clk_disable(b->appspll_en_clk);
 
 	/* If we are switching to a lower frequency, we can potentially
