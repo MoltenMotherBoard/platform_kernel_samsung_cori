@@ -1,0 +1,14 @@
+chal_audiopopath.o: \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/audvoc/src/chal_audiopopath.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_sysmap.h \
+ arch/arm/mach-bcm215xx/include/mach/io.h \
+ arch/arm/mach-bcm215xx/include/mach/hardware.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_dsp_audio.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_util.h \
+ arch/arm/plat-bcmap/include/plat/chal/chal_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiomisc.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiopopath.h

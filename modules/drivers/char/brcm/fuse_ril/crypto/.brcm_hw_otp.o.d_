@@ -1,0 +1,120 @@
+brcm_hw_otp.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/crypto/brcm_hw_otp.c \
+ include/generated/autoconf.h include/linux/io.h include/linux/types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ include/linux/stddef.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/posix_types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/io.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/memory.h \
+ include/linux/const.h arch/arm/mach-bcm215xx/include/mach/memory.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/sizes.h \
+ include/asm-generic/memory_model.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/system.h \
+ include/linux/linkage.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/linkage.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/irqflags.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/ptrace.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/hwcap.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ arch/arm/mach-bcm215xx/include/mach/io.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/page.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/glue.h \
+ include/asm-generic/getorder.h include/linux/init.h \
+ include/linux/delay.h include/linux/kernel.h \
+ /opt/toolchains/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+ include/linux/bitops.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bitops.h \
+ include/asm-generic/bitops/non-atomic.h \
+ include/asm-generic/bitops/fls64.h include/asm-generic/bitops/sched.h \
+ include/asm-generic/bitops/hweight.h \
+ include/asm-generic/bitops/arch_hweight.h \
+ include/asm-generic/bitops/const_hweight.h \
+ include/asm-generic/bitops/lock.h include/linux/log2.h \
+ include/linux/dynamic_debug.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/delay.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/param.h \
+ include/linux/fs.h include/linux/limits.h include/linux/ioctl.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/ioctl.h \
+ include/asm-generic/ioctl.h include/linux/wait.h include/linux/list.h \
+ include/linux/poison.h include/linux/prefetch.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/processor.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/cache.h \
+ include/linux/spinlock.h include/linux/preempt.h \
+ include/linux/thread_info.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/thread_info.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/fpstate.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/domain.h \
+ include/linux/stringify.h include/linux/bottom_half.h \
+ include/linux/spinlock_types.h include/linux/spinlock_types_up.h \
+ include/linux/lockdep.h include/linux/rwlock_types.h \
+ include/linux/spinlock_up.h include/linux/rwlock.h \
+ include/linux/spinlock_api_up.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/atomic.h \
+ include/asm-generic/atomic-long.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/current.h \
+ include/linux/kdev_t.h include/linux/dcache.h include/linux/rculist.h \
+ include/linux/rcupdate.h include/linux/cache.h include/linux/threads.h \
+ include/linux/cpumask.h include/linux/bitmap.h include/linux/string.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/string.h \
+ include/linux/seqlock.h include/linux/completion.h \
+ include/linux/rcutree.h include/linux/path.h include/linux/stat.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/stat.h \
+ include/linux/time.h include/linux/math64.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/div64.h \
+ include/linux/kobject.h include/linux/sysfs.h include/linux/errno.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/errno.h \
+ include/asm-generic/errno.h include/asm-generic/errno-base.h \
+ include/linux/kref.h include/linux/radix-tree.h \
+ include/linux/prio_tree.h include/linux/pid.h include/linux/mutex.h \
+ include/linux/capability.h include/linux/semaphore.h \
+ include/linux/fiemap.h include/linux/quota.h include/linux/rwsem.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/rwsem.h \
+ include/linux/percpu_counter.h include/linux/smp.h \
+ include/linux/percpu.h include/linux/pfn.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/percpu.h \
+ include/asm-generic/percpu.h include/linux/percpu-defs.h \
+ include/linux/dqblk_xfs.h include/linux/dqblk_v1.h \
+ include/linux/dqblk_v2.h include/linux/dqblk_qtree.h \
+ include/linux/nfs_fs_i.h include/linux/nfs.h \
+ include/linux/sunrpc/msg_prot.h include/linux/inet.h \
+ include/linux/fcntl.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/fcntl.h \
+ include/asm-generic/fcntl.h include/linux/err.h include/linux/device.h \
+ include/linux/ioport.h include/linux/klist.h include/linux/module.h \
+ include/linux/kmod.h include/linux/gfp.h include/linux/mmzone.h \
+ include/linux/numa.h include/linux/nodemask.h \
+ include/linux/pageblock-flags.h include/generated/bounds.h \
+ include/linux/memory_hotplug.h include/linux/notifier.h \
+ include/linux/srcu.h include/linux/topology.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/topology.h \
+ include/asm-generic/topology.h include/linux/mmdebug.h \
+ include/linux/workqueue.h include/linux/timer.h include/linux/ktime.h \
+ include/linux/jiffies.h include/linux/timex.h include/linux/param.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/timex.h \
+ arch/arm/mach-bcm215xx/include/mach/timex.h include/linux/debugobjects.h \
+ include/linux/elf.h include/linux/elf-em.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/elf.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/user.h \
+ include/linux/moduleparam.h include/linux/tracepoint.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/module.h \
+ include/trace/events/module.h include/trace/define_trace.h \
+ include/linux/pm.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/device.h \
+ include/linux/pm_wakeup.h \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/crypto/type_def.h \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/crypto/brcm_hw_otp.h \
+ ../modules/drivers/char/brcm/fuse_ril/bcm_kril_debug.h \
+ ../modules/drivers/char/brcm/fuse_log/bcmlog.h \
+ arch/arm/plat-bcmap/include/plat/bcm_otp.h

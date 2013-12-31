@@ -1,0 +1,1 @@
+cmd_../modules/../modules/drivers/video/bmem/built-in.o :=  /opt/toolchains/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o ../modules/../modules/drivers/video/bmem/built-in.o ../modules/../modules/drivers/video/bmem/bmem.o 

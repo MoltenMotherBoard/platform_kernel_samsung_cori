@@ -1,0 +1,4 @@
+md5.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/test/md5.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/test/md5.h

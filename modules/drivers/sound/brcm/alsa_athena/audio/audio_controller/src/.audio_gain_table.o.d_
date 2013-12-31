@@ -1,0 +1,7 @@
+audio_gain_table.o: \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/audio/audio_controller/src/audio_gain_table.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/audio/audio_controller/audio_gain_table.h

@@ -1,0 +1,8 @@
+gpio_handler.o: \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/audio/gpio_handler/src/gpio_handler.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/audio/gpio_handler/public/gpio_handler.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/audio/audio_vdriver/public/audio_vdriver_gpio.h

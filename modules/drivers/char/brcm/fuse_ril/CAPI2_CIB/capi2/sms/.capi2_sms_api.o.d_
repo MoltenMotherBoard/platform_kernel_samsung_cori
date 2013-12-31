@@ -1,0 +1,3 @@
+capi2_sms_api.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/sms/capi2_sms_api.c \
+ include/generated/autoconf.h

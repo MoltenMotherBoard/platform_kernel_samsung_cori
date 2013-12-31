@@ -1,0 +1,23 @@
+ipc_buffer.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/src/ipc_buffer.c \
+ include/generated/autoconf.h include/linux/stddef.h \
+ include/linux/compiler.h include/linux/compiler-gcc.h \
+ include/linux/compiler-gcc4.h include/linux/string.h \
+ include/linux/types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/posix_types.h \
+ /opt/toolchains/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/string.h \
+ include/linux/broadcom/csl_types.h \
+ include/linux/broadcom/ipcproperties.h \
+ include/linux/broadcom/ipcinterface.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_buffer.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_endpoints.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_queues.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_bufferpool.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_trace.h

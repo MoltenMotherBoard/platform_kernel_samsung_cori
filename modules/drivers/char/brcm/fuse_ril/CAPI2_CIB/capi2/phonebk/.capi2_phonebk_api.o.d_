@@ -1,0 +1,3 @@
+capi2_phonebk_api.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/phonebk/capi2_phonebk_api.c \
+ include/generated/autoconf.h

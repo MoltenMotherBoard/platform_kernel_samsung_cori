@@ -1,0 +1,37 @@
+bcmmtt.o: ../modules/../modules/drivers/char/brcm/fuse_log/bcmmtt.c \
+ include/generated/autoconf.h include/linux/kernel.h \
+ /opt/toolchains/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+ include/linux/linkage.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/linkage.h \
+ include/linux/stddef.h include/linux/types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/posix_types.h \
+ include/linux/bitops.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bitops.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/system.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/irqflags.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/ptrace.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/hwcap.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ include/asm-generic/bitops/non-atomic.h \
+ include/asm-generic/bitops/fls64.h include/asm-generic/bitops/sched.h \
+ include/asm-generic/bitops/hweight.h \
+ include/asm-generic/bitops/arch_hweight.h \
+ include/asm-generic/bitops/const_hweight.h \
+ include/asm-generic/bitops/lock.h include/linux/log2.h \
+ include/linux/dynamic_debug.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/mackief/Dev/Cori/kernel/kernel/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h include/linux/broadcom/csl_types.h \
+ arch/arm/plat-bcmap/include/plat/timer.h \
+ ../modules/../modules/drivers/char/brcm/fuse_log/bcmlog.h \
+ ../modules/../modules/drivers/char/brcm/fuse_log/bcmmtt.h

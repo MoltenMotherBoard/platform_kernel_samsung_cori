@@ -1,0 +1,9 @@
+ipc_queues.o: \
+ ../modules/../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/src/ipc_queues.c \
+ include/generated/autoconf.h include/linux/broadcom/csl_types.h \
+ include/linux/broadcom/ipcproperties.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_queues.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
+ include/linux/broadcom/ipcinterface.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_endpoints.h \
+ ../modules/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_trace.h

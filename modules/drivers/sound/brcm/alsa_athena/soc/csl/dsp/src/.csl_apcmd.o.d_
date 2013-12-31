@@ -1,0 +1,15 @@
+csl_apcmd.o: \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/src/csl_apcmd.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/sharedmem.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/dsp/athena/B0/include/shared.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/consts.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/dsp/athena/B0/include/shared_ap.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/sharedmem_comms.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/common/chip_version.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/dsp_feature_def.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/csl_dsp.h \
+ ../modules/../modules/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/csl_apcmd.h

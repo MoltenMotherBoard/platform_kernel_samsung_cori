@@ -1,0 +1,6 @@
+ipc_stubs.o: ../modules/../modules/drivers/char/brcm/fuse_ipc/ipc_stubs.c \
+ include/generated/autoconf.h \
+ ../modules/../modules/drivers/char/brcm/fuse_ipc/ipc_stubs.h \
+ include/linux/broadcom/csl_types.h \
+ arch/arm/plat-bcmap/include/plat/timer.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h
