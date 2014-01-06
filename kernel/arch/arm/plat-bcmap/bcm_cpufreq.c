@@ -280,11 +280,10 @@ static unsigned int bcm_cpufreq_get_speed(unsigned int cpu)
 static int bcm_cpufreq_verify_speed(struct cpufreq_policy *policy)
 {
 	struct bcm_cpufreq *b = &bcm_cpufreq[policy->cpu];
-	int ret = -EINVAL;
+	int ret;
 
-	if (b->bcm_freqs_table)
-		ret = cpufreq_frequency_table_verify(policy,
-			b->bcm_freqs_table);
+	ret = cpufreq_frequency_table_verify(policy,
+		b->bcm_freqs_table);
 
 	if (IS_FLOW_DBG_ENABLED) {
 		pr_debug("%s: after cpufreq verify: min:%d->max:%d kHz\n",
@@ -296,20 +295,19 @@ static int bcm_cpufreq_verify_speed(struct cpufreq_policy *policy)
 
 static int wait_for_pll_on(void)
 {
-	int ret = -EIO;
-	int cnt = 10;
+	int ret = 1;
+	u32 val;
 
 	/* Poll for PLL_ON state (CLK_DEBUG_MON2[7:4]==4b0101) */
 	do {
-		u32 val = readl(ADDR_CLKPWR_CLK_SYSCLK_DEBUG_MON2);
+		udelay(1);
+		val = readl(ADDR_CLKPWR_CLK_SYSCLK_DEBUG_MON2);
 		val &= APPL_MON_APLL_SWITCH_STATE;
 		val >>= APPL_MON_APLL_SWITCH_STATE_SHIFT;
 		if (val == APLL_MON_PLL_ON) {
 			ret = 0;
-			break;
 		}
-		udelay(1);
-	} while (cnt--);
+	} while (ret != 0);
 
 	return ret;
 }

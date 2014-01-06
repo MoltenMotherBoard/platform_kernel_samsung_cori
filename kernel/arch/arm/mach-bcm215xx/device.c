@@ -574,10 +574,10 @@ enum {
 /* Voltage-Frequency mapping for BCM21553 CPU0 */
 static struct bcm_freq_tbl bcm215xx_cpu0_freq_tbl[] = {
 #if defined(CONFIG_MFD_MAX8986)
-	FTBL_INIT(BCM_CORE_CLK_LOWAR / 1000, 1100000),
+	FTBL_INIT(BCM_CORE_CLK_LOWAR / 1000, 1120000),
 	FTBL_INIT(BCM_CORE_CLK_NORMAL / 1000, 1140000),
 	FTBL_INIT(BCM_CORE_CLK_HIMED / 1000, 1200000),
-	FTBL_INIT(BCM_CORECLK_TURBO / 1000, 1260000),
+	FTBL_INIT(BCM_CORECLK_TURBO / 1000, 1240000),
 #elif defined(CONFIG_MFD_D2041)
 	FTBL_INIT(BCM_CORE_CLK_LOWAR / 1000, 1100000),
 	FTBL_INIT(BCM_CORE_CLK_NORMAL / 1000, 1140000),
@@ -619,7 +619,9 @@ struct platform_device bcm21553_cpufreq_drv = {
 
 static struct bcm21553_cpufreq_gov_plat bcm21553_cpufreq_gov_plat = {
 	.freq_turbo = BCM_CORECLK_TURBO,
+	.freq_himed = BCM_CORE_CLK_HIMED,
 	.freq_normal = BCM_CORE_CLK_NORMAL,
+	.freq_lowar = BCM_CORE_CLK_LOWAR,
 };
 
 struct platform_device bcm21553_cpufreq_gov = {
@@ -636,17 +638,26 @@ struct platform_device bcm21553_cpufreq_gov = {
  *                        DATA FOR AVS DRIVER                        *
  *********************************************************************/
 #if defined(CONFIG_MFD_MAX8986)
-#define NM2_FF_VOLTAGE_NORMAL	1180000
-#define NM2_TT_VOLTAGE_NORMAL	1240000
-#define NM2_SS_VOLTAGE_NORMAL	1300000
 
-#define NM2_FF_VOLTAGE_TURBO	1220000
-#define NM2_TT_VOLTAGE_TURBO	1300000
-#define NM2_SS_VOLTAGE_TURBO	1360000
+#define NM2_FF_VOLTAGE_LOWAR	1120000
+#define NM2_TT_VOLTAGE_LOWAR	1120000
+#define NM2_SS_VOLTAGE_LOWAR	1120000
 
-#define NM_FF_VOLTAGE		1320000
-#define NM_TT_VOLTAGE		1320000
-#define NM_SS_VOLTAGE		1360000
+#define NM2_FF_VOLTAGE_NORMAL	1140000
+#define NM2_TT_VOLTAGE_NORMAL	1140000
+#define NM2_SS_VOLTAGE_NORMAL	1140000
+
+#define NM2_FF_VOLTAGE_HIMED	1200000
+#define NM2_TT_VOLTAGE_HIMED	1200000
+#define NM2_SS_VOLTAGE_HIMED	1200000
+
+#define NM2_FF_VOLTAGE_TURBO	1240000
+#define NM2_TT_VOLTAGE_TURBO	1240000
+#define NM2_SS_VOLTAGE_TURBO	1240000
+
+#define NM_FF_VOLTAGE		1300000
+#define NM_TT_VOLTAGE		1300000
+#define NM_SS_VOLTAGE		1340000
 #elif defined(CONFIG_MFD_D2041)
 // DLG TODO WS: RECHECK - Between MAX8986 and D2041 is difference for step size
 // Max8986 	: 20mV step
@@ -669,21 +680,27 @@ struct platform_device bcm21553_cpufreq_gov = {
 static struct silicon_type_info part_type_ss = {
 	.lpm_voltage = -1, /* Pass -1 if no update needed */
 	.nm_voltage = NM_SS_VOLTAGE,
+	.nm2_lowar_voltage = NM2_SS_VOLTAGE_LOWAR,
 	.nm2_normal_voltage = NM2_SS_VOLTAGE_NORMAL,
+	.nm2_himed_voltage = NM2_SS_VOLTAGE_HIMED,
 	.nm2_turbo_voltage = NM2_SS_VOLTAGE_TURBO,
 };
 
 static struct silicon_type_info part_type_tt = {
 	.lpm_voltage = -1, /* Pass -1 if no update needed */
 	.nm_voltage = NM_TT_VOLTAGE,
+	.nm2_lowar_voltage = NM2_TT_VOLTAGE_LOWAR,
 	.nm2_normal_voltage = NM2_TT_VOLTAGE_NORMAL,
+	.nm2_himed_voltage = NM2_TT_VOLTAGE_HIMED,
 	.nm2_turbo_voltage = NM2_TT_VOLTAGE_TURBO,
 };
 
 static struct silicon_type_info part_type_ff = {
 	.lpm_voltage = -1, /* Pass -1 if no update needed */
 	.nm_voltage = NM_FF_VOLTAGE,
+	.nm2_lowar_voltage = NM2_FF_VOLTAGE_LOWAR,
 	.nm2_normal_voltage = NM2_FF_VOLTAGE_NORMAL,
+	.nm2_himed_voltage = NM2_FF_VOLTAGE_HIMED,
 	.nm2_turbo_voltage = NM2_FF_VOLTAGE_TURBO,
 };
 
@@ -694,48 +711,52 @@ static struct silicon_type_info part_type_ff = {
  */
 static void bcm215xx_avs_notify(int silicon_type)
 {
+	int lowar;
 	int normal;
+	int himed;
 	int turbo;
 
 	pr_info("%s: silicon_type : %d\n", __func__, silicon_type);
 
 	switch(silicon_type)
-	{
-	case SILICON_TYPE_SLOW:
+ 	{
+ 	case SILICON_TYPE_SLOW:
+		lowar = part_type_ss.nm2_lowar_voltage;
 		normal = part_type_ss.nm2_normal_voltage;
-		turbo = part_type_ss.nm2_turbo_voltage;
-		break;
+		himed = part_type_ss.nm2_himed_voltage;
+ 		turbo = part_type_ss.nm2_turbo_voltage;
+ 		break;
+ 
+ 	case SILICON_TYPE_TYPICAL:
+		lowar = part_type_tt.nm2_lowar_voltage;
+ 		normal = part_type_tt.nm2_normal_voltage;
+		himed = part_type_tt.nm2_himed_voltage;
+ 		turbo = part_type_tt.nm2_turbo_voltage;
+ 		break;
+ 
+ 	case SILICON_TYPE_FAST:
+		lowar = part_type_ff.nm2_lowar_voltage;
+ 		normal = part_type_ff.nm2_normal_voltage;
+		himed = part_type_ff.nm2_himed_voltage;
+ 		turbo = part_type_ff.nm2_turbo_voltage;
+ 		break;
+ 
+ 	default:
+		lowar = part_type_ss.nm2_lowar_voltage;
+ 		normal = part_type_ss.nm2_normal_voltage;
+		himed = part_type_ss.nm2_himed_voltage;
+ 		turbo = part_type_ss.nm2_turbo_voltage;
+ 		break;
+ 	}
 
-	case SILICON_TYPE_TYPICAL:
-		normal = part_type_tt.nm2_normal_voltage;
-		turbo = part_type_tt.nm2_turbo_voltage;
-		break;
-
-	case SILICON_TYPE_FAST:
-		normal = part_type_ff.nm2_normal_voltage;
-		turbo = part_type_ff.nm2_turbo_voltage;
-		break;
-
-	default:
-		normal = part_type_ss.nm2_normal_voltage;
-		turbo = part_type_ss.nm2_turbo_voltage;
-		break;
-	}
-
-	if (normal >= 0)
-	{
-		bcm215xx_cpu0_freq_tbl[BCM_LOWAR_MODE].cpu_voltage =
-			(u32)normal;
-		bcm215xx_cpu0_freq_tbl[BCM_NORMAL_MODE].cpu_voltage =
-			(u32)normal;
-	}
-	if (turbo >= 0)
-	{
+	bcm215xx_cpu0_freq_tbl[BCM_LOWAR_MODE].cpu_voltage =
+		(u32)lowar;
+	bcm215xx_cpu0_freq_tbl[BCM_NORMAL_MODE].cpu_voltage =
+		(u32)normal;
 	bcm215xx_cpu0_freq_tbl[BCM_HIMED_MODE].cpu_voltage =
-			(u32)turbo;
-		bcm215xx_cpu0_freq_tbl[BCM_TURBO_MODE].cpu_voltage =
-			(u32)turbo;
-	}
+		(u32)himed;
+	bcm215xx_cpu0_freq_tbl[BCM_TURBO_MODE].cpu_voltage =
+		(u32)turbo;
 }
 #else
 #define bcm215xx_avs_notify NULL
@@ -813,10 +834,18 @@ void __init update_avs_sysparm(void)
 	SYSPARM_VOLT("nm2_ff_voltage_turbo", part_type_ff.nm2_turbo_voltage);
 	SYSPARM_VOLT("nm2_tt_voltage_turbo", part_type_tt.nm2_turbo_voltage);
 	SYSPARM_VOLT("nm2_ss_voltage_turbo", part_type_ss.nm2_turbo_voltage);
+ 
+	SYSPARM_VOLT("nm2_ff_voltage_himed", part_type_ff.nm2_himed_voltage);
+	SYSPARM_VOLT("nm2_tt_voltage_himed", part_type_tt.nm2_himed_voltage);
+	SYSPARM_VOLT("nm2_ss_voltage_himed", part_type_ss.nm2_himed_voltage);
 
 	SYSPARM_VOLT("nm2_ff_voltage_normal", part_type_ff.nm2_normal_voltage);
 	SYSPARM_VOLT("nm2_tt_voltage_normal", part_type_tt.nm2_normal_voltage);
 	SYSPARM_VOLT("nm2_ss_voltage_normal", part_type_ss.nm2_normal_voltage);
+ 
+	SYSPARM_VOLT("nm2_ff_voltage_lowar", part_type_ff.nm2_lowar_voltage);
+	SYSPARM_VOLT("nm2_tt_voltage_lowar", part_type_tt.nm2_lowar_voltage);
+	SYSPARM_VOLT("nm2_ss_voltage_lowar", part_type_ss.nm2_lowar_voltage);
 
 	SYSPARM_VOLT("nm_ff_voltage", part_type_ff.nm_voltage);
 	SYSPARM_VOLT("nm_tt_voltage", part_type_tt.nm_voltage);
