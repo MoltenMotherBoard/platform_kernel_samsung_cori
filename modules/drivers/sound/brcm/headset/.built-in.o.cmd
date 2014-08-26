@@ -1,1 +1,0 @@
-cmd_../modules/../modules/drivers/sound/brcm/headset/built-in.o :=  rm -f ../modules/../modules/drivers/sound/brcm/headset/built-in.o; /opt/toolchains/arm-eabi-4.4.3/bin/arm-eabi-ar rcs ../modules/../modules/drivers/sound/brcm/headset/built-in.o

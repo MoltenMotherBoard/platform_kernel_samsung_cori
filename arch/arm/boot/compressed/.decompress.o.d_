@@ -1,0 +1,15 @@
+decompress.o: arch/arm/boot/compressed/decompress.c \
+ include/generated/autoconf.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ include/linux/types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ include/linux/stddef.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/posix_types.h \
+ include/linux/linkage.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/linkage.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/string.h \
+ arch/arm/boot/compressed/../../../../lib/decompress_unlzma.c \
+ include/linux/decompress/mm.h

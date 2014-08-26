@@ -1,0 +1,16 @@
+chal_audiomic.o: \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/audvoc/src/chal_audiomic.c \
+ include/generated/autoconf.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_sysmap.h \
+ arch/arm/mach-bcm215xx/include/mach/io.h \
+ arch/arm/mach-bcm215xx/include/mach/hardware.h \
+ arch/arm/plat-bcmap/include/plat/chal/chal_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_auxmic.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_syscfg.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_dsp_audio.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_util.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiomisc.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiomic.h

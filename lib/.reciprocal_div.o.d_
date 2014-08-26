@@ -1,0 +1,20 @@
+reciprocal_div.o: lib/reciprocal_div.c include/generated/autoconf.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/div64.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/system.h \
+ include/linux/linkage.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/linkage.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/irqflags.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/ptrace.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/hwcap.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h include/linux/types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ include/linux/stddef.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/posix_types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h include/linux/reciprocal_div.h

@@ -1,0 +1,48 @@
+compat.o: arch/arm/kernel/compat.c include/generated/autoconf.h \
+ include/linux/types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ include/linux/stddef.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/posix_types.h \
+ include/linux/kernel.h \
+ /usr/lib64/gcc/arm-none-eabi/4.8.1/include/stdarg.h \
+ include/linux/linkage.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/linkage.h \
+ include/linux/bitops.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bitops.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/system.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/irqflags.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/ptrace.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/hwcap.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ include/asm-generic/bitops/non-atomic.h \
+ include/asm-generic/bitops/fls64.h include/asm-generic/bitops/sched.h \
+ include/asm-generic/bitops/hweight.h \
+ include/asm-generic/bitops/arch_hweight.h \
+ include/asm-generic/bitops/const_hweight.h \
+ include/asm-generic/bitops/lock.h include/linux/log2.h \
+ include/linux/dynamic_debug.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h include/linux/string.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/string.h \
+ include/linux/init.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/setup.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/mach-types.h \
+ include/generated/mach-types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/page.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/glue.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/memory.h \
+ include/linux/const.h arch/arm/mach-bcm215xx/include/mach/memory.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/sizes.h \
+ include/asm-generic/memory_model.h include/asm-generic/getorder.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/mach/arch.h \
+ arch/arm/kernel/compat.h

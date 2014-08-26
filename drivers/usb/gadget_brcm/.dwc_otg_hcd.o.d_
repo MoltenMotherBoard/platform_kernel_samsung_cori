@@ -1,0 +1,2 @@
+dwc_otg_hcd.o: drivers/usb/gadget_brcm/dwc_otg_hcd.c \
+ include/generated/autoconf.h

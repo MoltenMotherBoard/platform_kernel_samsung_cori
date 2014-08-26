@@ -1,1 +1,0 @@
-cmd_../modules/../modules/drivers/video/ge/ge_drv/ge_drv.ko := /opt/toolchains/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /home/mackief/Dev/Cori/kernel/kernel/scripts/module-common.lds --build-id -o ../modules/../modules/drivers/video/ge/ge_drv/ge_drv.ko ../modules/../modules/drivers/video/ge/ge_drv/ge_drv.o ../modules/../modules/drivers/video/ge/ge_drv/ge_drv.mod.o

@@ -1,0 +1,8 @@
+sys_ni.o: kernel/sys_ni.c include/generated/autoconf.h \
+ include/linux/linkage.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/linkage.h \
+ include/linux/errno.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/errno.h \
+ include/asm-generic/errno.h include/asm-generic/errno-base.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/unistd.h

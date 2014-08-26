@@ -1,1 +1,0 @@
-cmd_../modules/../modules/drivers/sound/brcm/headset/brcm-headsetsw.o := /opt/toolchains/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o ../modules/../modules/drivers/sound/brcm/headset/brcm-headsetsw.o ../modules/../modules/drivers/sound/brcm/headset/brcm_headset.o 

@@ -1,3 +1,0 @@
-capi2_phonectrl_api.o: \
- ../modules/../modules/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/msc/capi2_phonectrl_api.c \
- include/generated/autoconf.h

@@ -1,0 +1,38 @@
+misc.o: arch/arm/boot/compressed/misc.c include/generated/autoconf.h \
+ include/linux/compiler.h include/linux/compiler-gcc.h \
+ include/linux/compiler-gcc4.h include/linux/types.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ include/linux/stddef.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/posix_types.h \
+ include/linux/linkage.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/linkage.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/string.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/unaligned.h \
+ include/linux/unaligned/le_byteshift.h \
+ include/linux/unaligned/be_byteshift.h include/linux/unaligned/generic.h \
+ arch/arm/mach-bcm215xx/include/mach/uncompress.h \
+ include/linux/serial_reg.h include/linux/io.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/io.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/memory.h \
+ include/linux/const.h arch/arm/mach-bcm215xx/include/mach/memory.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/sizes.h \
+ include/asm-generic/memory_model.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/system.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/irqflags.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/ptrace.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/hwcap.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ arch/arm/mach-bcm215xx/include/mach/io.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/page.h \
+ /home/dpucci/Android/platform_kernel_samsung_cori-gingerbread.bak/kernel/arch/arm/include/asm/glue.h \
+ include/asm-generic/getorder.h \
+ arch/arm/mach-bcm215xx/include/mach/hardware.h
