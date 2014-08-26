@@ -2489,8 +2489,8 @@ static struct android_usb_platform_data android_usb_pdata = {
 	.product_id = 0x0005,
 	.adb_product_id = 0x0002,
 	.version = 0x0100,
-	.product_name = "Samsung Android Phone",
-	.manufacturer_name = "SAMSUNG",
+	.product_name = "GT-S5300",
+	.manufacturer_name = "Samsung",
 	.serial_number="0123456789ABCDEF",
 	.nluns = 2,  // "2" is for external (SD card) & internal (EMMC) storage 
 };
@@ -3623,7 +3623,7 @@ static int __init ramdump_init(void)
 module_init(ramdump_init);
 
 /* TODO: Replace BCM1160 with BCM21553/AthenaRay once registered */
-MACHINE_START(BCM1160, "BCM21553 ThunderbirdEDN31 platform")
+MACHINE_START(BCM1160, "GT-S5300 Board")
 	/* Maintainer: Broadcom Corporation */
 	.phys_io = BCM21553_UART_A_BASE,
 	.io_pg_offst = (IO_ADDRESS(BCM21553_UART_A_BASE) >> 18) & 0xfffc,
