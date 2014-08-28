@@ -1,0 +1,77 @@
+/**
+
+\mainpage Broadcom Proprietary API's
+@{
+
+@section auxadcapis Auxilliary Analog-to-Digital Converter
+
+\li \ref AuxADCAPIGroup
+
+@section cameraapis Camera API's
+
+\li \ref HALCamDrvGroup
+
+@section clockreleated Clock Related
+
+\li \ref ClockAPIGroup
+\li \ref Clock2157APIGroup	
+
+@section DMA DMA
+
+\li \ref DMADRVGroup
+
+@section GPIO GPIO
+
+The Linux GPIO documentation can be found in the file 
+kernel/common/Documentation/gpio.txt.  Broadcom extends the GPIO interface provided by Linux.  
+Here are the Broadcom extensions:\n
+\li \ref GPIOAPIGroup 
+
+@section IRQ Interrupts
+
+\li \ref InterruptAPIGroup
+
+@section i2sAPIs I2S API's
+
+\li \ref I2SDRVGroup
+\li \ref I2SDAIGroup
+
+@section OTPAPIs One Time Programmable API's
+
+\li \ref BRCMOTPAPIGroup
+
+@section PMURelated PMU Related
+
+\li \ref PMAPIGroup
+\li \ref BCM59035CoreAPIGroup
+\li \ref BCM59035PowerAPIGroup
+
+@section Timers Timers
+
+\li \ref TimerAPIGroup
+
+@section USB USB
+
+Linux includes an explanation of how to use USB in the directory 
+kernel/common/Documentation/usb.  Here are some Broadcom extensions.
+
+\li \ref USBPCDGroup
+\li	\ref USBGadgetDriverADB
+
+@subsection WatchdogTimer Watchdog Timer
+Linux includes an explanation of how to use the Watchdog timer in the directory 
+kernel/common/Documentation/watchdog.  Broadcom supports the interface explained there.
+
+In addition, Broadcom supports API's for controlling the Watchdog Timer via direct function call (direct function call is not typical usage in Linux):
+\li \ref WatchdogTimerAPIGroup
+
+@section WifiPMUEnum Wifi and PMU Enum Started
+
+The Wifi power on and power off routines are included in the board API group, together with
+a PMU Enum started routine.
+
+\li \ref BoardBravaAPIGroup
+	
+@}
+
+*/
