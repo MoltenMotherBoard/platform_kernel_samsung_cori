@@ -1,0 +1,49 @@
+chal_audiomixertap.o: \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/audvoc/src/chal_audiomixertap.c \
+ include/generated/autoconf.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_sysmap.h \
+ arch/arm/mach-bcm215xx/include/mach/io.h \
+ arch/arm/mach-bcm215xx/include/mach/hardware.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_dsp_audio.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/rdb/athena/B0/brcm_rdb_util.h \
+ arch/arm/plat-bcmap/include/plat/chal/chal_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiomisc.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/chal/modules/audio/inc/chal_audiomixertap.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/log.h \
+ arch/arm/plat-bcmap/include/plat/osdal_os.h include/linux/kernel.h \
+ /usr/lib64/gcc/arm-none-eabi/4.8.1/include/stdarg.h \
+ include/linux/linkage.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/linkage.h \
+ include/linux/stddef.h include/linux/types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/posix_types.h \
+ include/linux/bitops.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bitops.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/system.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/irqflags.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/ptrace.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/hwcap.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ include/asm-generic/bitops/non-atomic.h \
+ include/asm-generic/bitops/fls64.h include/asm-generic/bitops/sched.h \
+ include/asm-generic/bitops/hweight.h \
+ include/asm-generic/bitops/arch_hweight.h \
+ include/asm-generic/bitops/const_hweight.h \
+ include/asm-generic/bitops/lock.h include/linux/log2.h \
+ include/linux/dynamic_debug.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/string.h

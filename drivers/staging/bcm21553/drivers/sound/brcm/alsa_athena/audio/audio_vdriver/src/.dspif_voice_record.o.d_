@@ -1,0 +1,60 @@
+dspif_voice_record.o: \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/audio/audio_vdriver/src/dspif_voice_record.c \
+ include/generated/autoconf.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/resultcode.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/msconsts.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/dsp/athena/B0/include/shared.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/mobcom_types.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/consts.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/dsp/athena/B0/include/shared_ap.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/audio_consts.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/tones_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/audio/public/auddrv_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/audio/audio_vdriver/public/dspif_voice_record.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/dsp/public/dspcmd.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/sharedmem.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/sharedmem_comms.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/chip_version.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/dsp_feature_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/common/log.h \
+ arch/arm/plat-bcmap/include/plat/osdal_os.h include/linux/kernel.h \
+ /usr/lib64/gcc/arm-none-eabi/4.8.1/include/stdarg.h \
+ include/linux/linkage.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/linkage.h \
+ include/linux/stddef.h include/linux/types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/posix_types.h \
+ include/linux/bitops.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bitops.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/system.h \
+ include/linux/irqflags.h include/linux/typecheck.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/irqflags.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/ptrace.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/hwcap.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/outercache.h \
+ include/asm-generic/cmpxchg-local.h \
+ include/asm-generic/bitops/non-atomic.h \
+ include/asm-generic/bitops/fls64.h include/asm-generic/bitops/sched.h \
+ include/asm-generic/bitops/hweight.h \
+ include/asm-generic/bitops/arch_hweight.h \
+ include/asm-generic/bitops/const_hweight.h \
+ include/asm-generic/bitops/lock.h include/linux/log2.h \
+ include/linux/dynamic_debug.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/swab.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/swab.h \
+ include/linux/byteorder/generic.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bug.h \
+ include/asm-generic/bug.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/string.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/dsp/public/csl_apcmd.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/audio/public/csl_aud_drv.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/soc/csl/audio/public/auddrv_def.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/audio/audio_vdriver/public/audio_vdriver.h \
+ drivers/staging/bcm21553/drivers/sound/brcm/alsa_athena/audio/audio_vdriver/public/ripisr_audio.h

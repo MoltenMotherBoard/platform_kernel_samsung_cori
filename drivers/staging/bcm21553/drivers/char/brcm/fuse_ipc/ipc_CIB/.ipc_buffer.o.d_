@@ -1,0 +1,23 @@
+ipc_buffer.o: \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_buffer.c \
+ include/generated/autoconf.h include/linux/stddef.h \
+ include/linux/compiler.h include/linux/compiler-gcc.h \
+ include/linux/compiler-gcc4.h include/linux/string.h \
+ include/linux/types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/types.h \
+ include/asm-generic/int-ll64.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/bitsperlong.h \
+ include/asm-generic/bitsperlong.h include/linux/posix_types.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/posix_types.h \
+ /usr/lib64/gcc/arm-none-eabi/4.8.1/include/stdarg.h \
+ /home/dpucci/Android/kernel-cori-tst/arch/arm/include/asm/string.h \
+ include/linux/broadcom/csl_types.h \
+ include/linux/broadcom/ipcproperties.h \
+ include/linux/broadcom/ipcinterface.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_buffer.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_endpoints.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_queues.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_bufferpool.h \
+ drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_trace.h
