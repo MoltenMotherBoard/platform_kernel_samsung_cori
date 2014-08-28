@@ -16,14 +16,16 @@
 #ifndef _BMEM_WRAPPER_H_
 #define _BMEM_WRAPPER_H_
 
+#include "linux/types.h"
+
 // #define BMEM_CHECK_OVERRUN
 #define BMEM_CRASH_ON_OVERRUN
 
 #if defined (CONFIG_BRCM_V3D_OPT)
 	#if defined (CONFIG_BCM_LCD_NT35582)
 		#define BMEM_SIZE  (1024*1024*80)
-#else
-		#define BMEM_SIZE  (1024*1024*60)
+	#else
+		#define BMEM_SIZE  (1024*1024*80)
 	#endif
 #endif
 
@@ -81,6 +83,8 @@ struct bmem_logic {
 	int (*cleanup)(void);
 	int (*GetStatus)(bmem_status_t *p_bmem_status);
 	int (*SetStatus)(bmem_set_status_t *p_bmem_set_status);
+	int (*GetFreeMemorySize)(void);
+	int (*GetUsedMemoryByTgid)(pid_t tgid);
 };
 
 int register_bmem_wrapper(struct bmem_logic *logic);
