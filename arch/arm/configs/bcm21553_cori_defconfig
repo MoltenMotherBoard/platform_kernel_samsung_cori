@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Linux kernel version: 2.6.35.7
-# Thu Aug 28 13:02:24 2014
+# Thu Aug 28 13:10:53 2014
 #
 CONFIG_ARM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
@@ -1645,7 +1645,7 @@ CONFIG_BRCM_MODULES=y
 CONFIG_BRCM_MODULES_PRIV=y
 CONFIG_BMEM=y
 CONFIG_HANTRO=m
-CONFIG_GE=m
+CONFIG_GE=y
 CONFIG_BRCM_HAL_CAM=y
 # CONFIG_BRCM_HAL_CAM_WITH_STILL_YUV is not set
 # CONFIG_BCM_CAM_MT9T111 is not set
