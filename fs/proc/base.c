@@ -1051,6 +1051,9 @@ static ssize_t oom_adjust_write(struct file *file, const char __user *buf,
 	unlock_task_sighand(task, &flags);
 	put_task_struct(task);
 
+	delete_from_adj_tree(task);
+	add_2_adj_tree(task);
+
 	return count;
 }
 
