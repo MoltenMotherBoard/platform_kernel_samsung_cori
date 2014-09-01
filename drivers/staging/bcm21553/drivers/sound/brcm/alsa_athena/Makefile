@@ -103,12 +103,12 @@ EXTRA_CFLAGS += -I$(src)/audio/voif_handler/public
 EXTRA_CFLAGS += -I$(src)/audio/gpio_handler/public
 
 #Platform header files
-EXTRA_CFLAGS += -I ./arch/arm/plat-bcmap/include/
-EXTRA_CFLAGS += -I ./arch/arm/plat-bcmap/include/plat/
-EXTRA_CFLAGS += -I ./drivers/char/broadcom/
-EXTRA_CFLAGS += -I ./arch/arm/mach-bcm215xx/include/
-EXTRA_CFLAGS += -I ./arch/arm/plat-bcmap/include/plat/chal/
-EXTRA_CFLAGS += -I ./arch/arm/plat-bcmap/include/plat/osabstract/
+EXTRA_CFLAGS += -Iarch/arm/plat-bcmap/include/
+EXTRA_CFLAGS += -Iarch/arm/plat-bcmap/include/plat/
+EXTRA_CFLAGS += -Idrivers/char/broadcom/
+EXTRA_CFLAGS += -Iarch/arm/mach-bcm215xx/include/
+EXTRA_CFLAGS += -Iarch/arm/plat-bcmap/include/plat/chal/
+EXTRA_CFLAGS += -Iarch/arm/plat-bcmap/include/plat/osabstract/
 
 obj-$(CONFIG_BRCM_SOUND_ATHENA_ALSA) += snd-brcm-omx.o
 snd-brcm-omx-objs := brcm_alsa_dev.o
