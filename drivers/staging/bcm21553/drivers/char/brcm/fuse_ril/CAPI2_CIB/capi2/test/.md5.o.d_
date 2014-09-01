@@ -1,4 +1,0 @@
-md5.o: \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/test/md5.c \
- include/generated/autoconf.h \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/test/md5.h

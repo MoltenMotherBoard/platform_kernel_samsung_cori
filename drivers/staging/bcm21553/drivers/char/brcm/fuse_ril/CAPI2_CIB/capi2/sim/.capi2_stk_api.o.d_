@@ -1,3 +1,0 @@
-capi2_stk_api.o: \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/sim/capi2_stk_api.c \
- include/generated/autoconf.h

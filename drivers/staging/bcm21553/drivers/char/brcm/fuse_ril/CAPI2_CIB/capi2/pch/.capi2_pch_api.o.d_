@@ -1,3 +1,0 @@
-capi2_pch_api.o: \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ril/CAPI2_CIB/capi2/pch/capi2_pch_api.c \
- include/generated/autoconf.h

@@ -1,9 +1,0 @@
-ipc_queues.o: \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_queues.c \
- include/generated/autoconf.h include/linux/broadcom/csl_types.h \
- include/linux/broadcom/ipcproperties.h \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/ipc_queues.h \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_sharedmemory.h \
- include/linux/broadcom/ipcinterface.h \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_endpoints.h \
- drivers/staging/bcm21553/drivers/char/brcm/fuse_ipc/ipc_CIB/public/ipc_trace.h
